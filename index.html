@@ -1,0 +1,19 @@
+<head>
+  <script src="glyphs.js" charset="utf-8"></script>
+  <script>function hetero() {
+    var text = document.getElementById('prehet').value;
+    text = mutate(text);
+    document.getElementById('het').value = text;
+  }
+  window.onload = hetero</script>
+  <style type="text/css">
+  textarea, button { display: block; }
+  </style>
+</head>
+<body>
+  <h1>Heterograph Attack!</h1>
+  <p>Enter some text here and click "Glitchify!"</p>
+  <textarea id="prehet">Example</textarea>
+  <textarea readonly id="het"></textarea>
+  <button onclick="hetero()">Glitchify!</button>
+</body>
